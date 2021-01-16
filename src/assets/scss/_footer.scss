@@ -20,16 +20,25 @@
         color: white;
     }
     .code{
-        text-align: end;
+        a{
+            border-bottom: 2px solid #ff4d5a;
+        }
     }
     .contact{
         width: 100%;
         display: flex;
         justify-content: space-between;
+        margin: 1rem 0;
         a{
             margin: .5rem;
             font-size: 1.5rem;
         }
+    }
+    .me{
+        color: $primary-color;
+        font-family: $primary-font;
+        font-weight: 600;
+        font-size: 1.2rem;
     }
     @include tablet(){
         .container{
@@ -38,6 +47,9 @@
             grid-template-columns: repeat(auto-fill, 350px);
             justify-content: space-between;
 
+        }
+        .code{
+            text-align: end;
         }
     }
 }
