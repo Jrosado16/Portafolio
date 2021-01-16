@@ -1,0 +1,115 @@
+.header{
+    position: relative;
+    z-index: 900;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: grid;
+    grid-template-rows: 10% 90% ;
+    .navbar{
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            margin: .8rem 2rem;
+            font-size: 2.3rem;
+            color: $primary-color;
+            font-weight: 600;
+        }
+    }
+
+    .navegation{
+        display: flex;
+        flex-direction: column;
+       
+        .menu{
+            text-align: center;
+            height: 100%;
+            position: fixed;
+            width: 100%;
+            right: -2000px;
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: right .7s ease;
+        }
+        i{
+            position: relative;
+            margin: 1rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 999;
+        }
+        @include tablet(){
+            .menu{
+                display: flex;
+                position: relative;
+                right: 0;
+                background-color: inherit;
+            }
+            i{
+                display: none;
+            }
+        }
+        .active{
+            right: 0;
+        }
+        li{
+            margin: 1.4rem;
+            font-size: 1.2rem;
+            list-style: none;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        li:hover{
+            border-bottom: 3px solid $primary-color;
+            transition: all 0.3s ease;
+
+        }
+
+        
+    }
+
+    .presentation{
+        // max-width: 1200px;
+        // margin: 0 auto;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        // align-content: center;
+
+    }
+
+    .hello{
+        font-family: $secondary-font;
+        margin: 1rem;
+        align-self: center;
+        font-size: 30px;
+        padding-bottom: 4rem;
+        // align-content: flex-start;
+        // align-items: flex-start;
+        .btn{
+            width: 150px;
+        }
+        .name{
+            font-size: 5rem;
+            // font-style: $secondary-font;
+            font-weight: 600;
+        }
+        .i-am{
+            margin-bottom: 2rem;
+            display: flex;
+            #typed{
+                color: $primary-color;
+                margin-left: 10px;
+            }
+        }
+        
+    }
+
+    @include tablet(){
+        .presentation{
+            padding: 4rem;
+        }
+    }
+    
+}

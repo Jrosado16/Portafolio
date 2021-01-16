@@ -1,0 +1,19 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

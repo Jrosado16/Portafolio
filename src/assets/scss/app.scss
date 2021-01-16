@@ -1,0 +1,48 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'general';
+@import 'particle';
+@import 'skill';
+@import 'work';
+@import 'footer';
+
+html{
+    // font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+    font-family: $primary-font
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

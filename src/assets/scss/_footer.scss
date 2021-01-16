@@ -1,0 +1,43 @@
+
+
+.footer{
+    background: #072142;
+    padding: 1rem;
+    color: white;
+    width: 100%;
+
+    .container{
+        // text-align: center;
+        display: grid;
+        grid-template-columns: 100%;
+        
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    
+    a{
+        color: white;
+    }
+    .code{
+        text-align: end;
+    }
+    .contact{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a{
+            margin: .5rem;
+            font-size: 1.5rem;
+        }
+    }
+    @include tablet(){
+        .container{
+            text-align: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 350px);
+            justify-content: space-between;
+
+        }
+    }
+}
