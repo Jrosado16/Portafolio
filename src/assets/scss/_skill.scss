@@ -37,16 +37,16 @@
     .skill-description{
         display: grid;
         justify-content: space-between;
-        grid-template-columns: repeat(auto-fill, 400px);
-        padding: 1rem 2rem;
+        grid-template-columns: repeat(auto-fill, 300px);
+        padding: 1rem;
         .skill{
-            margin: .5rem 0;
+            margin: .5rem ;
         }
         .description{
             display: flex;
             justify-content: space-between;
             font-family: $primary-font;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: #072142;
         }
         .percentage{
@@ -64,4 +64,30 @@
             }
         }
     }
+
+    @include tablet(){
+        .skill-description{
+            grid-template-columns: repeat(auto-fill, 400px);
+            padding: 1rem 2rem;
+            .skill{
+                margin: .5rem 0;
+            }
+            .description{
+                font-size: 1.5rem;
+            }
+
+        }
+
+
+    }
+
+    //     .skill{
+    //         margin: .5rem 0;
+    //     }
+    //     .description{
+    //         font-size: 1rem;
+    //         color: #072142;
+    //     }
+
+    // }
 }
