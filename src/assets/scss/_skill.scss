@@ -37,7 +37,7 @@
     .skill-description{
         display: grid;
         justify-content: space-between;
-        grid-template-columns: repeat(auto-fill, 300px);
+        grid-template-columns: repeat(auto-fill, 100%);
         padding: 1rem;
         .skill{
             margin: .5rem ;
