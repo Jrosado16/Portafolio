@@ -27,9 +27,20 @@
             <div class="navegation">
                 <i class="fas fa-bars btn-active"></i>
                 <ul class="menu">
-                    <li>Sobre mi</li>
-                    <li>Proyectos</li>
-                    <li>Skill</li>
+                    <li>
+                        <a href="#about-me">
+                            Sobre mi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#proyects">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#my-skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -37,6 +48,10 @@
             <div class="hello">
                 Hola mi nombre es:
                 <p class="name">Carlos Rosado</p>
+                <!-- <div class="moon1">
+                </div>
+                <div class="moon2"></div> -->
+
                  <div class="i-am">
                     soy
                     <div id="typed-strings">
@@ -51,9 +66,22 @@
                 
                 <button class="btn btn-primary">Mas Aqui</button>
             </div>
+            <div class="portafolio">
+                <!-- Portafolio -->
+                <!-- <p>P</p>
+                <p>&nbsp; &nbsp;O</p>
+                <p>R &nbsp;&nbsp;</p>
+                <p>T</p>
+                <p>A</p>
+                <p>F</p>
+                <p>O</p>
+                <p>L</p>
+                <p>I</p>
+                <p>O</p> -->
+            </div>
         </div> 
     </header>
-    <div class="about-me">
+    <div id="about-me" class="about-me">
         <div class="about-container">
             <div class="container">
                 <div class="title">Sobre mi</div>
@@ -69,19 +97,53 @@
 
         </div>
     </div>
-    <div class="skill-container">
+    <div id="my-skills" class="skill-container">
         <div class="container">
             <div class="title">Habilidades</div>
             <div class="skill-description">
             </div>
         </div>
     </div>
-    <div class="work-container">
+    <div id="proyects" class="work-container">
         <div class="container">
             <div class="title">Experiencia</div>
+
+            <div class="poryects-container">
+                <div class="proyects">
+                    <div class="name">Adminsion</div>
+                    <i class="fas fa-users"></i>
+                    <div class="description">
+                        Lorem ipsum dolor, sit amet consectetur 
+                        adipisicing elit. Accusamus, rem! Architecto 
+                        dolores mollitia rem aliquam dicta ea, odio at 
+                        impedit cupiditate vitae ipsum doloribus. 
+                    </div>
+                </div>
+                <div class="proyects">
+                    <div class="name">Inventario</div>
+                    <i class="fas fa-truck-loading"></i>
+                    <div class="description">
+                        Lorem ipsum dolor, sit amet consectetur 
+                        adipisicing elit. Accusamus, rem! Architecto 
+                        dolores mollitia rem aliquam dicta ea, odio at 
+                        impedit cupiditate vitae ipsum doloribus. 
+                    </div>
+                </div>
+                <div class="proyects">
+                    <div class="name">Consultora Educativa</div>
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="description">
+                        Lorem ipsum dolor, sit amet consectetur 
+                        adipisicing elit. Accusamus, rem! Architecto 
+                        dolores mollitia rem aliquam dicta ea, odio at 
+                        impedit cupiditate vitae ipsum doloribus. 
+                    </div>
+                    <a class="btn">ver</a>
+                </div>
+            </div>
         </div>
     </div>
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="container">
             
             <div class="me">Carlos Rosado</div>
@@ -114,10 +176,10 @@
     <script>
         var typed = new Typed('#typed', {
             stringsElement: '#typed-strings',
-            typeSpeed: 80, 
+            typeSpeed: 100, 
             loop: true, 
             backDelay: 900, 
-            backSpeed: 80, 
+            backSpeed: 100, 
         });
       </script>
 </body>

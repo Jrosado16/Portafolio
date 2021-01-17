@@ -27,7 +27,7 @@ particlesJS("particles-js",
                                     "distance":150,
                                     "color":"#ffffff","opacity":0.1,"width":1},
                                     "move":{
-                                        "enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,
+                                        "enable":true,"speed":1,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,
                                         "attract":{"enable":false,"rotateX":600,"rotateY":1200
                                     }}},
                                     "interactivity":{

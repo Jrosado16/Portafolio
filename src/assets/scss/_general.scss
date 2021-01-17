@@ -4,51 +4,58 @@
 }
 
 .about-me{
-    background-image: url('/img/me.jpg');
-    height: 100vh;
+    // background-image: url('/img/me.jpg');
+    // height: 100vh;
+    margin: 2rem 0 5rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     .about-container{
-        background-color: rgba(07,21,42,0.7);
-        height: 100vh;
+        // height: 100vh;
         display: grid;
         align-content: center;
-        
-        color: white;
         text-align: center;
-        .container{
-            // height: 100vh;
-            // display: grid;
-            align-content: space-between;
-
-        }
-        
         .title{
+            margin: 2rem;
+            text-align: center;
             font-size: 3rem;
-            padding: 1rem;
             font-family: $secondary-font;
             position: relative;
+    
         }
         .title::before {
             content: "";
             position: absolute;
-            bottom: 0px;
+            bottom: -13px;
             margin-top: 2rem;
             left: 50%;
-            width: 150px;
+            width: 180px;
             height: 4px;
             border-radius: 50px;
             background: $primary-color;
             transform: translateX(-50%);
         }
-    
+        .title::after {
+            content: "Quien soy"; 
+        }
+        .title::after {
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            font-size: 20px;
+            color: $primary-color;
+            padding: 0 5px;
+            background: #fff;
+            transform: translateX(-50%);
+        }
+        .container{
+            align-content: space-between;
+        }
         .description{
             font-size: 1rem;
             padding: 2rem;
-
         }
         .btn{
             text-transform: uppercase;
@@ -72,7 +79,6 @@
 }
 .btn{
     border: none;
-    padding: 1rem 2rem;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
@@ -84,6 +90,7 @@
     color: white;
     border: 2px solid $primary-color; 
     transition: all 0.3s ease;
+    padding: 1rem 2rem;
 
 }
 

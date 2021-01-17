@@ -2,7 +2,8 @@
 
 .work-container{
     width: 100%;
-    height: 90vh;
+    // height: 90vh;
+    margin: 2rem 0;
     .title{
         margin: 2rem;
         text-align: center;
@@ -35,5 +36,56 @@
         padding: 0 5px;
         background: #fff;
         transform: translateX(-50%);
+    }
+
+    .poryects-container{
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 100%);
+
+        .proyects{
+            margin: 1rem .5rem;
+            padding: 1rem;
+            text-align: center;
+            .name{
+                padding: 1rem;
+                font-family: $primary-font;
+                // font-size: 1.2rem;
+                font-size: 1.5rem;
+                color: #072142;
+            }
+            i{
+                font-size: 4rem;
+                color: $primary-color;
+                // font-family: $primary-font;
+                // font-size: 1.2rem;
+                // color: #072142;
+            }
+            .description{
+                margin: 1rem 0;
+            }
+
+            box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
+            border-radius: 10px;
+            &:hover{
+                box-shadow: 0 5px 15px 0 rgba(255, 255, 255, 0.15);
+                // -webkit-box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
+                transition: all 0.4s ease;
+            }
+
+            .btn{
+                height: 10px;
+                padding: .4rem 2rem;
+                width: 100px;
+                background: $primary-color;
+                color: white;
+            }
+        }
+    }
+
+    @include tablet(){
+        .poryects-container{
+            grid-template-columns: repeat(auto-fill, 400px);
+        }
     }
 }
