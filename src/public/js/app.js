@@ -2,10 +2,14 @@
 
 const btnMenu = document.querySelector('.btn-active')
 const menu = document.querySelector('.menu');
+const bodyElement = document.getElementsByTagName('body')[0]
+
 
 btnMenu.addEventListener('click', () =>{
     console.log('menu')
     menu.classList.toggle('active');
+    bodyElement.classList.toggle('has-menu-open');
+
     if(btnMenu.classList.contains('fa-bars')){
         btnMenu.classList.remove('fa-bars')
         btnMenu.classList.add('fa-times')
@@ -24,7 +28,7 @@ const listSkills = [
     {label: 'JavaScript',   value: 80},
     {label: 'HTML',         value: 85},
     {label: 'CSS' ,         value: 85},
-    {label: 'SASS' ,         value: 85},
+    {label: 'SASS' ,        value: 85},
     {label: 'ReactJs',      value: 80},
     {label: 'VueJs',        value: 80},
     {label: 'Node',         value: 80},
