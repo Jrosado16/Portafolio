@@ -43,6 +43,10 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, 100%);
 
+        :hover{
+            transform: scale(1.01)
+        }
+
         .proyects{
             margin: 1rem .5rem;
             padding: 1rem;
