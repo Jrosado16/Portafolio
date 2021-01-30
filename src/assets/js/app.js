@@ -28,14 +28,14 @@ const listSkills = [
     {label: 'JavaScript',   value: 80},
     {label: 'HTML',         value: 85},
     {label: 'CSS' ,         value: 85},
-    {label: 'SASS' ,        value: 85},
-    {label: 'ReactJs',      value: 80},
-    {label: 'VueJs',        value: 80},
-    {label: 'Node',         value: 80},
-    {label: 'TypeScript',   value: 80},
-    {label: 'NestJs',       value: 80},
-    {label: 'MongoDB',      value: 70},
-    {label: 'Flutter',      value: 80},
+    {label: 'SASS' ,        value: 80},
+    {label: 'ReactJs',      value: 75},
+    {label: 'VueJs',        value: 70},
+    {label: 'Node',         value: 70},
+    {label: 'TypeScript',   value: 70},
+    {label: 'NestJs',       value: 65},
+    {label: 'MongoDB',      value: 65},
+    {label: 'Flutter',      value: 65},
 ]
 
 const skillContainer = document.querySelector('.skill-description');

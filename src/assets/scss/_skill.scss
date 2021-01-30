@@ -1,38 +1,9 @@
 
 
 .skill-container{
-    .title{
-        margin: 2rem;
-        text-align: center;
-        font-size: 3rem;
-        font-family: $secondary-font;
-        position: relative;
-
-    }
-    .title::before {
-        content: "";
-        position: absolute;
-        bottom: -13px;
-        margin-top: 2rem;
-        left: 50%;
-        width: 180px;
-        height: 4px;
-        border-radius: 50px;
-        background: $primary-color;
-        transform: translateX(-50%);
-    }
+ 
     .title::after {
         content: "skills"; 
-    }
-    .title::after {
-        position: absolute;
-        bottom: -22px;
-        left: 50%;
-        font-size: 20px;
-        color: $primary-color;
-        padding: 0 5px;
-        background: #fff;
-        transform: translateX(-50%);
     }
     .skill-description{
         display: grid;
@@ -60,7 +31,7 @@
 
                 height: 1rem;
                 border-radius: 10px;
-                background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+                background-image: linear-gradient(to right, #072142, #8c2b7a 42%, $primary-color);
             }
         }
     }
