@@ -46,29 +46,7 @@ const btnRight = document.querySelector('.right');
 // })
 
 btnRight.addEventListener('click', () => {
-    // console.log(window.innerWidth);
-    var max = 0;
-    if(window.innerWidth  < 480){
-        max = 2250;
-    }
-    if(window.innerWidth  >= 480 || window.innerWidth < 768){
-        max = 1970;
-    }
-    if(window.innerWidth  >= 768){
-        max = 980;
-    }     
-    if(CourseContainer.scrollLeft < max){
-        CourseContainer.scrollLeft += 300;
-        console.log('actual',CourseContainer.scrollLeft)
-        console.log(max)
-        // console.log('despues',CourseContainer.scrollLeft)
-    }else{
-        console.log('scroll',max)
-
-        CourseContainer.scrollLeft = 0;
-    }
-    // console.log(CourseContainer.scrollLeft)
-    // console.log(CourseContainer.scrollWidth)
+    CourseContainer.scrollLeft += 300;
 }) 
 btnLeft.addEventListener('click', () => {
     CourseContainer.scrollLeft -= 300; 

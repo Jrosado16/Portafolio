@@ -4,12 +4,14 @@ const btnMenu = document.querySelector('.btn-active')
 const menu = document.querySelector('.menu');
 const bodyElement = document.getElementsByTagName('body')[0]
 
+const li = document.querySelectorAll('li');
 
-btnMenu.addEventListener('click', () =>{
-    console.log('menu')
+menu.addEventListener('click', () => {
+    validateMenu()
+})
+function validateMenu(){
     menu.classList.toggle('active');
     bodyElement.classList.toggle('has-menu-open');
-
     if(btnMenu.classList.contains('fa-bars')){
         btnMenu.classList.remove('fa-bars')
         btnMenu.classList.add('fa-times')
@@ -22,6 +24,10 @@ btnMenu.addEventListener('click', () =>{
         btnMenu.style.transition = 'transform .7s ease'
     
     }
+}
+
+btnMenu.addEventListener('click', (e) =>{
+    validateMenu()
 })
 
 const listSkills = [
@@ -35,7 +41,7 @@ const listSkills = [
     {label: 'TypeScript',   value: 70},
     {label: 'NestJs',       value: 65},
     {label: 'MongoDB',      value: 65},
-    {label: 'Flutter',      value: 65},
+    {label: 'Flutter',      value: 70},
 ]
 
 const skillContainer = document.querySelector('.skill-description');
