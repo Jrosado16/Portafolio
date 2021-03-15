@@ -11,7 +11,7 @@ menu.addEventListener('click', () => {
 })
 function validateMenu(){
     menu.classList.toggle('active');
-    bodyElement.classList.toggle('has-menu-open');
+    // bodyElement.classList.toggle('has-menu-open');
     if(btnMenu.classList.contains('fa-bars')){
         btnMenu.classList.remove('fa-bars')
         btnMenu.classList.add('fa-times')
